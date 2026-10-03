@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de autos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="encabezado">
+      <nav class="nav">
+        <span class="logo">AutoTienda</span>
+        <ul>
+          <li><a href="#destacado">Destacado</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="titulo">Tienda de Autos</h1>
+      <p class="subtitulo">Encuentra el vehículo ideal para ti.</p>
+
+      <section class="vehiculo" id="destacado">
+        <h2>Honda Civic</h2>
+        <img
+          src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/civic-sedan/non-VLP/10-Family/MY26_Civic_Family_Card_Jelly_Hybrid_2x.jpg?sc_lang=en"
+          alt="Honda Civic"
+        />
+        <p id="precio">Precio: $95.000.000</p>
+
+        <button id="btnDetalles">Ver detalles</button>
+
+        <div id="detalles" class="oculto">
+          <p>Motor: 1.5 Turbo</p>
+          <p>Año: 2025</p>
+          <p>Transmisión: Automática</p>
+        </div>
+      </section>
+
+      <section id="catalogo">
+        <h2>Catálogo</h2>
+        <div class="grid">
+          <article class="tarjeta">
+            <h3>Toyota Corolla</h3>
+            <p class="precio">$88.000.000</p>
+            <p>Sedán confiable y económico, ideal para la ciudad.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Mazda 3</h3>
+            <p class="precio">$102.000.000</p>
+            <p>Diseño deportivo con excelente equipamiento de serie.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Renault Duster</h3>
+            <p class="precio">$92.000.000</p>
+            <p>SUV versátil para carretera y terrenos difíciles.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>
+          Somos una tienda de autos con más de 10 años de experiencia. Todos
+          nuestros vehículos pasan por una revisión completa antes de ser
+          entregados.
+        </p>
+        <ul class="beneficios">
+          <li>Garantía en todos los vehículos</li>
+          <li>Financiación flexible</li>
+          <li>Asesoría personalizada</li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>Solicitar información</h2>
+
+        <form id="formulario">
+          <label>
+            Nombre:
+            <input type="text" id="nombre" />
+          </label>
+
+          <label>
+            Email:
+            <input type="email" id="email" />
+          </label>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <!-- Contenedor para mostrar mensajes de error al usuario -->
+        <p id="mensajeError" style="color: red"></p>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>&copy; 2026 AutoTienda. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
